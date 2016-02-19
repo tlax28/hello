@@ -9,3 +9,5 @@ def newSn(num1):
 
 def sqRt(num1):
     return num1^0.5
+
+print newSn(4)
