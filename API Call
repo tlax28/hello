@@ -1,0 +1,10 @@
+# MAKING AN API CALL
+
+import requests
+
+headers = {'AccountKey':'w6T1aWbwnwsrVo3qby/TYg==', 'UniqueUserID':'a08a4f81-c63d-4f43-b539-e6d967c48142', 'accept':'application/json'}
+
+params = {'BusStopID':'96049', 'ServiceNo':'24', 'SST':True}
+
+r = requests.get('http://datamall2.mytransport.sg/ltaodataservice/BusArrival', headers=headers, params=params)
+print r.text
